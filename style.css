@@ -1,0 +1,263 @@
+/*Navigation Bar*/
+nav {overflow: auto;}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 20px;
+}
+nav li {
+        float: left;
+        text-decoration: none;
+}
+nav a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:link {
+        color: black;
+}
+nav a:visited { 
+        color: black;
+}
+nav a:hover {
+         color: 6890ff;
+}
+
+/*Photo Grid*/
+/*Two equal columns that float next to each other for each continent*/
+.columnNorthAmerica {
+    float: left;
+    width: 32%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.columnNorthAmerica img {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rowNorthAmerica:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.columnAsia {
+    float: left;
+    width: 32%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.columnAsia img {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rowAsia:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.columnEurope {
+    float: left;
+    width: 32%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.columnEurope img {
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rowEurope:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Hover effect for images */
+.thumb {
+    position: relative;
+    width: 100%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    float: left;
+}
+.text, .text-js {
+    display: none;
+    position: absolute;
+    width: 100%;
+    line-height: 100%;
+    background: #999;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 150%;
+}
+.thumb:hover .text {
+    display: block;
+}
+
+/*Background image for About Me page*/
+.backgroundimage {
+    background-image: url("Photos/Asia/Wuchang2.jpg");
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+} 
+
+/*About Me text*/
+.AboutMe {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.AboutMe p, h2 {
+    color: black;
+    font-size: 125%;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    text-align: center;
+    padding: 4px;
+}
+
+/*Contact Form*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: lightskyblue;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+/*Add a footer for copyright purposes */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 50px;
+  text-align: center;
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 17px;
+}
+
+/* Add a slideshow to the home page (with captions) */
+#slideshow {
+  position: relative;
+}
+
+.slide {display: none;}
+
+.centered {display: none;}
+
+button {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  background: rgba(0,0,0,0.8);
+  border: none;
+  padding: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:nth-of-type(2) {
+  right: 0;
+}
+
+.caption {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caption p {
+    color: white;
+    font-size: 45px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    border-style: solid;
+    text-align: center;
+    padding: 20px 12px;
+}
+
+.caption a:link {
+    color: white;
+    text-decoration: none;
+}
+.caption a:visited { 
+    color: white;
+}
+.caption a:hover {
+    color: black;
+}
+
+/* My name at top left of each page */
+.name {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+.name p {
+    color: black;
+    font-size: 25px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}

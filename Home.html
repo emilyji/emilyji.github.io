@@ -1,0 +1,48 @@
+<head>
+    <title>Home Page</title> 
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<br>
+<br>
+<br>
+<body>
+<div class = "wrapper">
+    <div class="name"><p>Emily Ji</p></div>
+    <nav>
+        <ul>
+            <li style="float:right"><a href="Contact.html">Contact</a></li>
+            <li style="float:right"><a href="About.html">About</a></li>
+            <li style="float:right"><a href="Asia.html">Asia</a></li>
+            <li style="float:right"><a href="Europe.html">Europe</a></li>
+            <li style="float:right"><a href="NorthAmerica.html">North America</a></li>
+            <li style="float:right"><a href="Home.html">Home</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <div class="slideshow">
+        <div class="slide">
+            <img src="Photos/North%20America/NYC3.JPG" style="width:100%">
+            <div class="caption"><p><a href="NorthAmerica.html">North America</a></p></div>
+        </div>
+        
+        <div class="slide">
+            <img src="Photos/Europe/Oxford7.jpg" style="width:100%">   
+            <div class="caption"><p><a href="Europe.html">Europe</a></p></div>
+        </div>
+        
+        <div class="slide">
+            <img src="Photos/Asia/Huaian1.jpg" style="width:100%">
+            <div class="caption"><p><a href="Asia.html">Asia</a></p></div>
+        </div>
+    
+        <button onclick="changeImage(-1)">&#10094;</button>
+        <button onclick="changeImage(1)">&#10095;</button>
+    </div>
+    
+    <script>showImage(1);</script>
+<div class="push"></div>
+</div>
+<footer class="footer">Copyright 2018. All rights reserved.</footer>
+</body>
